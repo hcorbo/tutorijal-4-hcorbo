@@ -12,8 +12,8 @@ public class Predmet {
         this.obaveznost = obaveznost;
     }
 
-    public void upisiStudentaNaPredmet(Student s, Predmet p){ }
-    public String spisakStudenataNaPredmetu(Predmet predmet){return null;}
+    public void upisiStudentaNaPredmet(Student s){ }
+    public String spisakStudenataNaPredmetu(){return null;}
 
     public boolean isObaveznost() {
         return obaveznost;

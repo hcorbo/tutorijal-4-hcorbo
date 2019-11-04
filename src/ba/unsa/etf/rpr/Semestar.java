@@ -10,6 +10,8 @@ public class Semestar {
     private Predmet [] predmeti;
     private int brSemestra;
     public void upisStudenta(Student s){};
+    public void dodajPredmetNaSemestar(Predmet p){};
+    public void izbrisiPredmetIzSemestra(Predmet p){};
 
     /*private int brojSemestra;
     private int ECTS;

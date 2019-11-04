@@ -1,10 +1,13 @@
 package ba.unsa.etf.rpr;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Predmet {
     private String naziv;
     private int brECTS;
     private boolean obaveznost;
-    private Student [] studenti;
+    private List<Student> studenti = new ArrayList<>();
 
     public Predmet(String naziv, int ECTS, boolean obaveznost) {
         this.naziv = naziv;
@@ -12,8 +15,10 @@ public class Predmet {
         this.obaveznost = obaveznost;
     }
 
-    public void upisiStudentaNaPredmet(Student s){ }
-    public String spisakStudenataNaPredmetu(){return null;}
+    public void upisiStudentaNaPredmet(Student s){
+        studenti.add(s);
+    }
+    public List spisakStudenataNaPredmetu(){return studenti;}
 
     public boolean isObaveznost() {
         return obaveznost;

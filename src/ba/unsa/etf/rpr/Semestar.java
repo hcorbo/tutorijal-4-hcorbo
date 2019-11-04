@@ -6,12 +6,19 @@ import java.util.Map;
 import java.util.Set;
 
 public class Semestar {
-    private Student [] studenti;
-    private Predmet [] predmeti;
+    private ArrayList<Student> studenti;
+    private ArrayList<Predmet> predmeti;
     private int brSemestra;
-    public void upisStudenta(Student s){};
-    public void dodajPredmetNaSemestar(Predmet p){};
-    public void izbrisiPredmetIzSemestra(Predmet p){};
+
+    public void upisStudenta(Student s){
+        studenti.add(s);
+    }
+    public void dodajPredmetNaSemestar(Predmet p){
+        predmeti.add(p);
+    }
+    public void izbrisiPredmetIzSemestra(Predmet p){
+        predmeti.remove(p);
+    }
 
     /*private int brojSemestra;
     private int ECTS;
